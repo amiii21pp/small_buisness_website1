@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Iyengar Bakery - Kumbalgodu, Bengaluru">
+  <title>Contact - Iyengar Bakery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: #fff8f0;
+      margin: 0;
+      color: #333;
+    }
+    header {
+      background: #d2691e;
+      color: #fff;
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+    nav {
+      background: #fff3e0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav li {
+      margin: 0 1.5rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #d2691e;
+      font-weight: 700;
+      transition: color 0.2s;
+    }
+    nav a:hover, nav a:focus {
+      color: #a0522d;
+    }
+    main {
+      max-width: 500px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem 2.5rem 2.5rem 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(210,105,30,0.08);
+    }
+    h2 {
+      text-align: center;
+      color: #d2691e;
+      margin-bottom: 1.5rem;
+    }
+    form label {
+      display: block;
+      margin-top: 1.2rem;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+    form input[type="text"],
+    form input[type="tel"],
+    form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      border: 1px solid #e0c3a0;
+      border-radius: 6px;
+      font-size: 1rem;
+      background: #fff8f0;
+      transition: border 0.2s;
+      resize: none;
+    }
+    form input[type="text"]:focus,
+    form input[type="tel"]:focus,
+    form textarea:focus {
+      border: 1.5px solid #d2691e;
+      outline: none;
+    }
+    form textarea {
+      min-height: 90px;
+      max-height: 200px;
+    }
+    form input[type="submit"] {
+      margin-top: 1.5rem;
+      width: 100%;
+      background: #d2691e;
+      color: #fff;
+      border: none;
+      padding: 0.9rem;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    form input[type="submit"]:hover {
+      background: #a0522d;
+    }
+    .form-message {
+      margin-top: 1rem;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1rem;
+      display: none;
+    }
+    .form-message.success {
+      color: #388e3c;
+      display: block;
+    }
+    .form-message.error {
+      color: #c62828;
+      display: block;
+    }
+    footer {
+      background: #fff3e0;
+      color: #a0522d;
+      text-align: center;
+      padding: 1.2rem 0;
+      margin-top: 2rem;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 600px) {
+      main {
+        padding: 1rem;
+      }
+      nav ul {
+        flex-direction: column;
+      }
+      nav li {
+        margin: 0.7rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Reach out for orders, feedback, or queries.</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Get in Touch</h2>
+    <form id="contactForm" autocomplete="on" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" required maxlength="50" placeholder="Your Name">
+      <label for="phone">Phone:</label>
+      <input type="tel" name="phone" id="phone" required pattern="[0-9]{10,15}" maxlength="15" placeholder="Your Phone Number">
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" required maxlength="500" placeholder="Type your message here..."></textarea>
+      <input type="submit" value="Send Message">
+      <div class="form-message" id="formMessage"></div>
+    </form>
+    <section style="margin-top:2.5rem; text-align:center;">
+      <h3 style="color:#d2691e; margin-bottom:0.5rem;">Bakery Address</h3>
+      <p>
+        Iyengar Bakery<br>
+        Kumbalgodu, Bengaluru, Karnataka 560074<br>
+        <a href="tel:+919876543210" style="color:#d2691e; text-decoration:underline;">+91 98765 43210</a>
+      </p>
+      <iframe
+        title="Iyengar Bakery Location"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=77.438%2C12.900%2C77.440%2C12.902&amp;layer=mapnik"
+        style="border:1px solid #e0c3a0; width:100%; height:180px; border-radius:8px; margin-top:1rem;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Iyengar Bakery, Kumbalgodu &mdash; Crafted with <span aria-label="love" style="color:#d2691e;">&#10084;</span></p>
+  </footer>
+  <script>
+    // Simple client-side validation
+    function validateForm(name, phone, message) {
+      if (!name.trim() || !phone.trim() || !message.trim()) return "All fields are required.";
+      if (!/^[a-zA-Z\s]+$/.test(name)) return "Name should contain only letters and spaces.";
+      if (!/^[0-9]{10,15}$/.test(phone)) return "Phone should be 10-15 digits.";
+      if (message.length > 500) return "Message is too long.";
+      return "";
+    }
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = this.name.value;
+      const phone = this.phone.value;
+      const message = this.message.value;
+      const msgDiv = document.getElementById('formMessage');
+      msgDiv.className = 'form-message';
+      msgDiv.style.display = 'none';
+
+      const error = validateForm(name, phone, message);
+      if (error) {
+        msgDiv.textContent = error;
+        msgDiv.classList.add('error');
+        msgDiv.style.display = 'block';
+        return;
+      }
+
+      fetch('http://localhost:5000/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, phone, message })
+      })
+      .then(res => {
+        if (!res.ok) throw new Error('Network error');
+        return res.text();
+      })
+      .then(data => {
+        msgDiv.textContent = data || "Message sent successfully!";
+        msgDiv.classList.add('success');
+        msgDiv.style.display = 'block';
+        document.getElementById('contactForm').reset();
+      })
+      .catch(() => {
+        msgDiv.textContent = "Error sending message. Please try again later.";
+        msgDiv.classList.add('error');
+        msgDiv.style.display = 'block';
+      });
+    });
+  </script>
+</body>
+</html>
